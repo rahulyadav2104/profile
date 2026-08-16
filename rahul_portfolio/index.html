@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Yadav | Cybersecurity Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background: rgba(11, 17, 32, 0.95);
+            border-bottom: 1px solid #1f2937;
+        }
+
+        .logo {
+            color: #38bdf8;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: #e5e7eb;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .hero-text h1 {
+            font-size: 52px;
+            margin-bottom: 10px;
+        }
+
+        .hero-text h1 span {
+            color: #38bdf8;
+        }
+
+        .hero-text h2 {
+            color: #94a3b8;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            padding: 12px 22px;
+            margin-right: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary {
+            background: #38bdf8;
+            color: #07111f;
+        }
+
+        .secondary {
+            border: 1px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #38bdf8;
+            box-shadow: 0 0 35px rgba(56, 189, 248, 0.25);
+        }
+
+        .section-title {
+            font-size: 35px;
+            margin-bottom: 35px;
+            color: #38bdf8;
+        }
+
+        .about {
+            max-width: 850px;
+            color: #cbd5e1;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 18px;
+            background: #111827;
+            border: 1px solid #334155;
+            border-radius: 6px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #111827;
+            padding: 25px;
+            border-radius: 10px;
+            border: 1px solid #1f2937;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #070b14;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column-reverse;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .profile {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">Rahul.dev</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Rahul Yadav</span></h1>
+            <h2>Cybersecurity Enthusiast & DevOps Learner</h2>
+            <p>
+                I am a Computer Science student interested in cybersecurity,
+                web application security, Python, Linux, cloud and DevOps.
+                I enjoy building projects and learning through hands-on labs.
+            </p>
+
+            <div class="buttons">
+                <a class="primary" href="#projects">View Projects</a>
+                <a class="secondary" href="#contact">Contact Me</a>
+            </div>
+        </div>
+
+        <img class="profile" src="profile.jpg" alt="Rahul Yadav">
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="about">
+            I am a Computer Science student with a strong interest in
+            cybersecurity and software development. My interests include
+            penetration testing, web security, SOC fundamentals, Python,
+            Django, Linux, Git, Docker and AWS. I like creating practical
+            projects that combine development and security.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Django</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">Linux</div>
+            <div class="skill">Docker</div>
+            <div class="skill">AWS</div>
+            <div class="skill">Burp Suite</div>
+            <div class="skill">Nmap</div>
+            <div class="skill">Wireshark</div>
+            <div class="skill">Metasploit</div>
+            <div class="skill">Wazuh</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Automated Web Vulnerability Scanner</h3>
+                <p>
+                    A Django-based security project for identifying common
+                    web vulnerabilities such as SQL injection, XSS and
+                    rate-limiting issues.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Wazuh Security Lab</h3>
+                <p>
+                    A hands-on security monitoring lab using Wazuh with
+                    Windows, Linux and attacker environments to understand
+                    logs, alerts and security monitoring.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Docker Projects</h3>
+                <p>
+                    Hands-on Docker practice including images, containers,
+                    ports, Dockerfiles, Docker Hub and containerized web
+                    applications.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contact</h2>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/rahulyadav2104" target="_blank">github.com/rahulyadav2104</a></p>
+        <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn profile</a></p>
+    </section>
+
+    <footer>
+        <p>© 2026 Rahul Yadav. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
